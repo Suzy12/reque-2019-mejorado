@@ -1,0 +1,114 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title> <h3 font-size = "140%"> Menú Medico</h3></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="card" [routerLink]="['/medico/perfil']">
+          <ion-card-header>
+            <i class="material-icons md-50">person</i>
+            <ion-card-title>Perfil de usuario</ion-card-title>
+            <ion-card-subtitle>Acceda a su información</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="card" [routerLink]="['/recordatorios/tabs/schedule']">
+          <ion-card-header>
+            <ion-icon name="notifications" class="icon-menu"></ion-icon>
+            <ion-card-title>Recordatorios</ion-card-title>
+            <ion-card-subtitle>Entérese de sus próximos compromisos</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card class="card" [routerLink]="['/medico/terapia']">
+          <ion-card-header>
+            <i class="material-icons md-50">ballot</i>
+            <ion-card-title>Terapias</ion-card-title>
+            <ion-card-subtitle>Ingrese aquí para guardar sus terapias</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="card" [routerLink]="['/menu-bitacora']">
+          <ion-card-header>
+            <i class="material-icons md-50">book</i>
+            <!--<i class="material-icons md-50">note_add</i>-->
+            <ion-card-title>Bitácora</ion-card-title>
+            <ion-card-subtitle>Ingrese alguna situación del paciente</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card class="card" [routerLink]="['/medico/medicamentos']">
+          <ion-card-header>
+            <i class="material-icons md-50">local_pharmacy</i>
+            <ion-card-title>Medicamentos</ion-card-title>
+            <ion-card-subtitle>Revise aquí la información de los medicamentos de sus pacientes</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="card">
+          <ion-card-header>
+            <ion-icon name="stats" class="icon-menu"></ion-icon>
+            <ion-card-title>Estadísticas</ion-card-title>
+            <ion-card-subtitle>Obtenga las estadísticas de los juegos de sus pacientes</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class = "card" [routerLink]="['/historial-paciente']">
+          <ion-card-header>
+              <ion-icon name ="filing" class="icon-menu"></ion-icon>
+              <ion-card-title>Historial médico paciente</ion-card-title>
+              <ion-card-subtitle>Modifique aquí el historial médico de sus pacientes</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+          <ion-card class = "card" [routerLink]="['/ver-historial-medico']">
+            <ion-card-header>
+                <ion-icon name ="book" class="icon-menu"></ion-icon>
+                <ion-card-title>Ver historial médico</ion-card-title>
+                <ion-card-subtitle>Revise aquí el historial médico de sus pacientes</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row >
+        <ion-col>
+            <ion-card class = "card" [routerLink]="['/medico-consultar-paciente']"> <!--Aqui va el link hacia Monitoreos-->
+              <ion-card-header>
+
+                  <ion-icon name ="search" class="icon-menu"></ion-icon>
+                  <ion-card-title>Consultar</ion-card-title>
+                  <ion-card-subtitle>Revise aquí la información de sus pacientes</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      <ion-col  >
+        <ion-card class="card tamanno" [routerLink]="['/login']">
+          <ion-card-header>
+            <ion-icon name="log-out" class="icon-menu"></ion-icon>
+            <ion-card-title>Salir</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

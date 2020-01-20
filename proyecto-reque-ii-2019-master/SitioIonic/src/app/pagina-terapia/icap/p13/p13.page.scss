@@ -1,0 +1,121 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 1%;
+    color: #1e1b6f;
+  }
+
+  ion-content {
+    --background: #EAF1FB;
+  }
+
+  .sub{
+      background-color: pink;
+  }
+
+  .sub-g{
+    background-color: rgba(136, 223, 136, 0.911);
+}
+.sub-o{
+    background-color:rgb(245, 184, 70)
+}
+.sub-b{
+    background-color: lightskyblue;
+}
+
+.sub-y{
+    background-color: lightyellow;
+}
+
+.size-p{
+  font-size: 120%;
+  width: 50%;
+}
+
+.lines{
+  border-right: 2px solid lightgray;
+}
+
+  .pos{
+      text-align: right;
+      width: 10%
+}
+
+  .form-row {
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px 50px;
+  }
+  $color--white: #FFFFFF;
+  $color--black: #000000;
+  $color--light-grey: #E6E6E6;
+  $color--grey: #CCCCCC;
+  $color--dark-grey: #7B7B7B;
+  $color--primary: #2AA1C0;
+  $color--secondary: #0E647D;
+
+
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1{
+    font-size: 22px;
+    margin-top: 20px;
+
+    .title-letter{
+        font-size: 80px;
+    }
+  }
+
+
+  .containerbtns {
+    width: 100%;
+    display: flex;
+  }
+
+  ion-button {
+    --background: #1e1b6f;
+    --background-hover : #2c28a4;
+    color: white;
+    margin-top: 2em;
+    font-size: 1.7em;
+    width: 15%;
+    height: 8%;
+  }
+
+  .btn_back {
+    text-align: left;
+    margin-left: 5%;
+    width: 50%;
+    height: 10%;
+  }
+
+  .btn_next {
+    text-align: right;
+    margin-right: 5%;
+    width: 50%;
+    height: 10%;
+  }
+
+  @media screen and (max-width: 600px) {
+      .form-row{
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .btn_next {
+        width: 80%;
+        margin-right: 20%;
+      }
+
+      .btn_back {
+        width: 80%;
+        margin-left: auto;
+      }
+  }

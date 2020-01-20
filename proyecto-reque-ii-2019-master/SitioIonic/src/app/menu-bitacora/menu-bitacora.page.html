@@ -1,0 +1,41 @@
+
+  <ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/menu/medico"></ion-back-button>
+          </ion-buttons>
+      <ion-title> <h3 font-size = "140%"> Bitácora</h3></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-card class="card" [routerLink]="['/menu-bitacora-agregar']">
+          <ion-card-header>
+            <i class="material-icons md-50">note_add</i>
+            <ion-card-title>Agregar</ion-card-title>
+            <ion-card-subtitle>Agregue información acerca del paciente</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-card class="card" [routerLink]="['/menu-bitacora-ver']">
+          <ion-card-header>
+            <ion-icon name="bookmarks" class="icon-menu"></ion-icon>
+            <ion-card-title>Ver</ion-card-title>
+            <ion-card-subtitle>Revise la información agregada</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-card class="card" [routerLink]="['/menu/medico']">
+          <ion-card-header>
+            <ion-icon name="log-out" class="icon-menu"></ion-icon>
+            <ion-card-title>Salir</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

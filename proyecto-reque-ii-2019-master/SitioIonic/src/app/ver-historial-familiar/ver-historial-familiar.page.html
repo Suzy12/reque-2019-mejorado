@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="blue1">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/menu/paciente"></ion-back-button>
+      </ion-buttons>
+    <ion-title color="light">Historial familiar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row class="d-block" *ngFor = 'let row of historial'>
+        <ion-col size="12" size-sm>
+            <ion-card class="qs">
+                <ion-card-header>
+                  <ion-card-title color="blue1" class="t-1 h-1"><i>{{row[0].parentesco}}</i></ion-card-title>
+                </ion-card-header>            
+                <ion-card-content>
+                 <h1>{{row[0].nombre}}</h1>
+                 <h2> {{row[0].edad}}</h2>
+                 <h2> {{row[0].enfermedad}} </h2>
+                 <h2> {{row[0].descripcion}} </h2>
+              </ion-card-content>
+              </ion-card>
+        </ion-col>
+        <ion-col size="12" size-sm *ngIf= 'row.length == 2'>
+          <ion-card class="qs">
+              <ion-card-header>
+                <ion-card-title color="blue1" class="t-1 h-1"><i>{{row[1].parentesco}}</i></ion-card-title>
+              </ion-card-header>            
+              <ion-card-content>
+                  <h1>{{row[1].nombre}}</h1>
+                  <h2> {{row[1].edad}}</h2>
+                  <h2> {{row[1].enfermedad}} </h2>
+                  <h2> {{row[1].descripcion}} </h2>
+            </ion-card-content>
+            </ion-card>
+      </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="blue1">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="ligth">Información personal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div >
+    <ion-item color="#BD6CBD">
+
+      <div class="perfil-Imagen">
+        <img src="../../assets/perfil-usuario.png" />
+      </div>
+      <div style="margin-left:24px;">
+        <h2>{{Nombre}}</h2>
+        <h4>Pacient</h4>
+      </div>
+
+    </ion-item>
+
+    <ion-item style="width: 100%">
+      <div class="perfil-subInfo" >
+        <h4>Cédula</h4>
+        <h4>{{id_user}}</h4>
+      </div>
+
+      <div class="perfil-subInfo" >
+        <h4>Nacimiento</h4>
+        <h4>{{Nacimiento}}</h4>
+      </div>
+    </ion-item>
+
+    <ion-item style="margin-top: 45pt" color="#BD6CBD">
+      <ion-icon name="radio-button-off" style="color: green;"></ion-icon>
+      <h4 style="margin-left: 25pt">Procedencia: {{PlaceOfOrigin}}</h4>
+    </ion-item>
+
+    <ion-item color="#BD6CBD">
+      <ion-icon name="radio-button-off" style="color: red;"></ion-icon>
+      <h4 style="margin-left: 25pt">Dirección: {{CurrentAddress}}</h4>
+    </ion-item>
+
+    <ion-item color="#BD6CBD">
+      <ion-icon name="radio-button-off" style="color: blue;"></ion-icon>
+      <h4 style="margin-left: 25pt">Profesión: {{Profession}}</h4>
+    </ion-item>
+
+    <ion-item-group>
+      <ion-item-divider color="#BD6CBD">
+        <ion-icon name="radio-button-off" style="color: brown;"></ion-icon>
+        <h4 style="margin-left: 25pt">Idiomas</h4>
+      </ion-item-divider>
+      
+      <ion-item *ngFor="let lengua of lenguas" class="perfil-listItem" color="#BD6CBD">
+        <ion-label>{{lengua.name}} Nivel {{lengua.level}} {{lengua.native}}</ion-label>
+      </ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="#BD6CBD">
+        <ion-icon name="radio-button-off" style="color: magenta;"></ion-icon>
+        <h4 style="margin-left: 25pt">Intereses y Gustos</h4>
+      </ion-item-divider>
+      <ion-item *ngFor="let interes of intereses" class="perfil-listItem" color="#BD6CBD">
+        <ion-label>{{interes}}</ion-label>
+      </ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="#BD6CBD">
+        <ion-icon name="radio-button-off" style="color: magenta;"></ion-icon>
+        <h4 style="margin-left: 25pt">Disgustos</h4>
+      </ion-item-divider>
+      <ion-item *ngFor="let disgusto of disgustos" class="perfil-listItem" color="#BD6CBD">
+        <ion-label>{{disgusto}}</ion-label>
+      </ion-item>
+    </ion-item-group>
+  </div>
+</ion-content>

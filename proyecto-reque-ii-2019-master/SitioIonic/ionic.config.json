@@ -1,0 +1,7 @@
+{
+  "name": "SitioIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

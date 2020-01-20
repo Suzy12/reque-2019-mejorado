@@ -1,0 +1,88 @@
+<ion-header>
+    <ion-toolbar>
+      <img class="logo" src="assets/LogoInMyMind.png" alt="" [routerLink]="['/login']">
+       <ion-button [routerLink]="['/login']"color="magenta" slot="end" class="mr-1" shape="round">Iniciar Sesión</ion-button>
+      </ion-toolbar>
+      <ion-toolbar color="blue1">
+          <ion-button fill="clear" color="light" class="b1 " [routerLink]="['/infoayuda']">
+            Atrás
+            </ion-button>
+      </ion-toolbar>
+  </ion-header>
+  <ion-content >
+    <h1 class="h1">Parkinson</h1>
+    <ion-grid class="p-0">
+        <ion-row>
+         <ion-col size = "12" size-sm>
+             <p class="p">
+                    La enfermedad de Parkinson ocurre cuando las células nerviosas no producen suficiente
+                    dopamina ocasionando un trastorno del movimiento. Aunque algunos casos son genéticos,
+                    algunos otros no se dan en miembros de una misma familia.
+                    <br>
+                    <br>
+                    Los síntomas suelen ir apareciendo poco a poco en un lado del cuerpo y luego se extienden a
+                    todo el cuerpo.  Entre los síntomas que pueden presentarse se pueden mencionar: temblor en las
+                    manos, brazos, piernas, mandíbula y cara, rigidez en los brazos, piernas y tronco, lentitud en
+                    los movimientos, problemas de equilibrio y coordinación.
+                    <br>
+                    <br>
+                    A medida que la enfermedad avanza, las personas pueden tener dificultades para realizar labores
+                    simples, además de depresiones, trastornos de sueño  y problemas para comunicarse y alimentarse.
+                    Para tener un diagnóstico de esta enfermedad no existe una prueba específica, este diagnóstico
+                    lo realiza un Neurólogo con base al historial clínico, un examen físico y neurológico además de
+                    la revisión de síntomas y signos.
+             </p>
+
+             <h2 class="h2">Síntomas</h2>
+             <p class="p">Algunos de los sintomas que se pueden presentar</p>
+             <ul class="u-1">
+              <li>Temblor en las manos, los brazos, las piernas, la mandíbula y la cara</li>
+              <li>Rigidez en los brazos, las piernas y el tronco</li>
+              <li>Lentitud de los movimientos.</li>
+              <li>Problemas de equilibrio y coordinación</li>
+            </ul>
+           </ion-col>
+           <ion-col size = "12" size-sm>
+             <h2 class="h2">Pruebas y diagnóstico</h2>
+            <p class="p">
+                No existe un examen de diagnóstico para esta enfermedad.
+                Los doctores usan el historial del paciente y un examen neurológico para diagnosticarlo.
+              </p>
+              <h2 class="h2">Medicación</h2>
+               <ul class="u-1">
+                  <li><b>Carbidopa-levodopa</b>: se convierte en dopamina.</li>
+                  <li><b>Infusión de carbidopa-levodopa</b>: compuesto por carbidopa y levodopa. Sin embargo,
+                  se administra a través de una sonda de alimentación que suministra el medicamento en forma de gel
+                  directamente al intestino delgado.</li>
+                  <li><b>Agonistas de la dopamina</b>: imitan los efectos de la dopamina en el cerebro.</li>
+                  <li><b>Inhibidores de la enzima monoamino oxidasa tipo B (MAO-B)</b>: ayudan a evitar la disolución
+                  de la dopamina en el cerebro.</li>
+                  <li><b>Anticolinérgicos</b>: para ayudar a controlar el temblor asociado a la enfermedad de Parkinson.</li>
+                </ul>
+                <p class="p">Es importante decir que estos medicamentos tienen efectos secundarios, además de que
+                  <b>se debe consultar a un médico antes de tomar el medicamento.</b></p>
+                <h2 class="h2">Demencia ligada a la enfermedad de Parkinson</h2>
+              <p class="p">
+                  La enfermedad de Parkinson puede, en algunos casos, desarrollar un cuadro de demencia.
+                  De hecho, se reconoce que la propia enfermedad aumenta el riesgo de padecerla
+                  <br>
+                  <br>
+                  Sus síntomas son muy parecidos a la enfermedad de Alzheimer, distinguiéndose principalmente
+                  en que en esta la memoria diferida está severamente afectada y en la demencia ligada al
+                  párkinson puede estar intacta.
+              </p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <img class="division" src="assets/divisionpag.png" alt="">
+          <h1 class="h1">Testimonio</h1>
+          <div style="width:100%;height:1px;">
+              <p class="h3">Testimonio de Gabriel, afectado de párkinson</p>
+          <div >
+           <iframe class="v-1" width="580" height="350" src="https://www.youtube.com/embed/WrwyCkMo0P4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        </ion-row>
+       </ion-grid>
+  </ion-content>

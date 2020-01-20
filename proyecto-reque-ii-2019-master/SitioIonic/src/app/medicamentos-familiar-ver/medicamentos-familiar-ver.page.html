@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="menu/familiar"></ion-back-button>
+        </ion-buttons>
+    <ion-title> <h3 font-size = "140%"> Ver medicamentos</h3></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card >
+        <ion-card-header>
+          <ion-card-title color="blue1">Seleccionar paciente</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-item>
+            <ionic-selectable
+            closeButtonText="Cerrar"
+            searchPlaceholder="Buscar paciente"
+            placeholder="Seleccionar paciente"
+            [searchFailText]="'No se encontró ningun paciente'"
+            [(ngModel)]="usuario"
+            [items]="usuarios"
+            itemTextField="nombre"
+            itemValueField="cedula"
+            [canSearch]="true">
+            </ionic-selectable>
+          </ion-item>
+        </ion-card-content>    
+      </ion-card>
+      <div style="text-align:center;">
+        <ion-button  class= "butonMedicamentos"color="magenta"shape="round"(click)="cargarMedicamentos()" >Cargar medicamentos</ion-button>
+    </div>
+
+    <div [hidden]="!listaVisible">
+
+      <ion-card >
+        <ion-list>
+          <ion-item>
+              <ion-label color ='blue1' style="font-size: 1.25em;">Nombre medicamento</ion-label>
+              <ion-label color="blue1" style="font-size: 1.25em;">Dosis e indicaciones</ion-label>
+          </ion-item>
+         
+          <ion-item *ngFor = 'let Medicamento of medicamentos'>
+
+            <ion-label> {{Medicamento.nombre}} </ion-label>
+            <ion-label>{{Medicamento.dosis}}</ion-label>
+
+          </ion-item>
+
+        </ion-list>
+
+      </ion-card>
+
+    </div>
+
+</ion-content>

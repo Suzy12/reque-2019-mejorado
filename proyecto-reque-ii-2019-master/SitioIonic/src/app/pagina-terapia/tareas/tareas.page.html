@@ -1,0 +1,65 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title>tareas</ion-title>
+  </ion-toolbar>
+</ion-header-->
+<ion-content>
+<ion-row>
+    <ion-card >
+        <ion-card-header>
+          <ion-card-title color="blue1">Seleccionar paciente</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-item>
+            <ionic-selectable
+            closeButtonText="Cerrar"
+            searchPlaceholder="Buscar paciente"
+            placeholder="Seleccionar paciente"
+            [searchFailText]="'No se encontró ningun paciente'"
+            [(ngModel)]="usuario"
+            [items]="usuarios"
+            itemTextField="nombre"
+            itemValueField="cedula"
+            [canSearch]="true"
+            (onChange)="cargaTerapias($event)">
+            </ionic-selectable>
+          </ion-item>
+        </ion-card-content>    
+      </ion-card>
+</ion-row>
+<ion-row>
+  <form (ngSubmit)="formTerapia()">
+  <ion-card>
+    <ion-card-header>
+      <ion-item>
+        <ion-label position="floating">Fecha</ion-label>
+        <ion-input type="date" [(ngModel)]="terapia.fecha" name="nombre"></ion-input>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Lugar</ion-label>
+        <ion-input type="text" [(ngModel)]="terapia.lugar" name="lugar"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-textarea [(ngModel)]="terapia.descripcion" name="descripcion"></ion-textarea>
+      </ion-item>
+      <ion-button ion-button type="submit" block>Guardar Nueva</ion-button>
+    </ion-card-content>
+  </ion-card>
+  </form>
+</ion-row>
+<ion-row *ngFor="let terapia of terapias">
+  <ion-col>
+    <ion-card>
+      <ion-card-header><ion-card-title><h1>{{terapia.fecha}}</h1></ion-card-title></ion-card-header>
+      <ion-card-content>
+        <h2>Lugar</h2><p>{{terapia.lugar}}</p>
+        <h2>Descripcion</h2><p>{{terapia.descripcion}}</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
+</ion-content>

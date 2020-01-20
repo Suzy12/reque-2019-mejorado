@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar>
+      <img class="logo" src="assets/LogoInMyMind.png" alt="" >
+        <ion-button [routerLink]="['/login']"color="magenta" slot="end" class="mr-1" shape="round">Iniciar Sesión</ion-button>
+       </ion-toolbar>
+       <div class="topnav">
+             <a href="#home" [routerLink]="['/informacion']">Inicio</a>
+             <a href="#home" [routerLink]="['/infoayuda']" >Información</a>
+             <a href="#home" [routerLink]="['/nosotros']">Quiénes Somos</a>
+             <a href="#" class="active">Donar</a>
+             <a href="#home" [routerLink]="['/faqs']" >FAQs</a>
+       </div>
+  </ion-header>
+
+<ion-content>
+
+  <div class="d-block">
+    <h1>Apoye a sus seres queridos</h1>
+    <p>Ayudenos a continuar apoyando la terapia de pacientes con demencia.</p>
+  </div>
+
+    <ion-grid>
+      <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>$5</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>$15</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>$25</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>$50</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button class="donatebtn">Donar ahora</ion-button>
+</ion-content>

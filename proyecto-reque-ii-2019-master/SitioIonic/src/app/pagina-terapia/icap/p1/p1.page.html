@@ -1,0 +1,76 @@
+<ion-content>
+  <div class="container">
+    <div class="btn_back">
+      <ion-button class="btn_back" [routerLink]="['/medico/terapia']">Atrás</ion-button>
+    </div>
+    <div class="btn_next">
+      <ion-button class="btn_next" [routerLink]="['/medico/terapia/icap/p2']">Siguiente</ion-button>
+    </div>
+  </div>
+  <h1>ICAP</h1>
+  <h2>INVENTARIO para la PLANIFICACIÓN de SERVICIOS Y PROGRAMACIÓN INDIVIDUAL</h2>
+  <h2>Robert H. Bruininks<br>Bradley K. Hill<br>Richard W. Woodcock<br>Richard F. Weatherman</h2>
+  <form [formGroup]="p1Form" (ngSubmit)="formSub()">
+    <div formGroupName="fullname" class="form-row">
+      <h3>Nombre y Apellidos</h3>
+      <label>Nombre<input type="text" formControlName="nombre" required/></label><br>
+      <label>Primer Apellido <input type="text" formControlName="apellido1" required/></label><br>
+      <label>Segundo Apellido<input type="text" formControlName="apellido2" required/></label><br>
+    </div>
+    <div class="form-row">
+      <label>N° de Cedula<input type="number" formControlName="cedula" required/></label>
+    </div>
+    <div formGroupName="direccion" class="form-row">
+      <h3>Direccion</h3>
+      <label>Exacta<input type="text" formControlName="exacta" required/></label><br>
+      <h3>Ubicacion geografica</h3>
+      <label>Provincia<input type="text" formControlName="provincia" required/></label><br>
+      <label>Canton<input type="text" formControlName="canton" required/></label><br>
+      <label>Distrito<input type="text" formControlName="distrito" required/></label><br>
+    </div>
+    <div formGroupName="telefono" class="form-row">
+      <h3>Telefonos</h3>
+      <label>Fijo<input type="number" formControlName="fijo" required/></label><br>
+      <label>Celular<input type="number" formControlName="celular" required/></label><br>
+    </div>
+    <div class="form-row">
+      <label>Nombre de la Institucion<input type="text" formControlName="institucion" required/></label><br>
+      <label>Persona que Evalua<input type="text" formControlName="evaluador" required/></label><br>
+    </div>
+    <div formGroupName="telefono_evaluador" class="form-row">
+      <h3>Telefonos</h3>
+      <label>Fijo<input type="number" formControlName="fijo" required/></label><br>
+      <label>Celular<input type="number" formControlName="celular" required/></label><br>
+    </div>
+    <div class="form-row">
+      <label>Padres o Encargados<input type="text" formControlName="encargados" required/></label>
+    </div>
+    <div formGroupName="telefono_encargado" class="form-row">
+      <h3>Telefonos</h3>
+      <label>Fijo<input type="number" formControlName="fijo" required/></label><br>
+      <label>Celular 1<input type="number" formControlName="celular1" required/></label><br>
+      <label>Celular 2<input type="number" formControlName="celular2" required/></label><br>
+    </div>
+    <div formGroupName="fecha_evaluacion" class="form-row">
+      <h3>Fecha de Evaluacion</h3>
+      <label>Dia<input type="number" formControlName="dia" required/></label><br>
+      <label>Mes<input type="number" formControlName="mes" required/></label><br>
+      <label>Año<input type="number" formControlName="agno" required/></label><br>
+    </div>
+    <div formGroupName="fecha_nacimiento" class="form-row">
+      <h3>Fecha de Nacimiento</h3>
+      <label>Dia<input type="number" formControlName="dia" required/></label><br>
+      <label>Mes<input type="number" formControlName="mes" required/></label><br>
+      <label>Año<input type="number" formControlName="agno" required/></label><br>
+    </div>
+    <button type="submit">Registrar</button>
+  </form>
+  <div class="container">
+    <div class="btn_back">
+      <ion-button class="btn_back" [routerLink]="['/medico/terapia']">Atrás</ion-button>
+    </div>
+    <div class="btn_next">
+      <ion-button class="btn_next" [routerLink]="['/medico/terapia/icap/p2']">Siguiente</ion-button>
+    </div>
+  </div>
+</ion-content>

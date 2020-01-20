@@ -1,0 +1,45 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/menu/familiar"></ion-back-button>
+        </ion-buttons>
+    <ion-title> <h3 font-size = "140%"> Información personal</h3></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-item color="#BD6CBD">
+
+      <div class="perfil-Imagen">
+        <img src="../../assets/perfil-usuario.png" />
+      </div>
+      <div style="margin-left:24px;">
+        <h2>{{Nombre}}</h2>
+        <h4>Familiar</h4>
+      </div>
+
+    </ion-item>
+
+    <ion-item style="width: 100%">
+      <div class="perfil-subInfo" >
+        <h4>Cédula</h4>
+        <h4>{{id_user}}</h4>
+      </div>
+
+    </ion-item>
+
+    <ion-item color="#BD6CBD">
+      <ion-icon name="radio-button-off" style="color: red;"></ion-icon>
+      <h4 style="margin-left: 25pt">Dirección: Paraiso, Cartago</h4>
+    </ion-item>
+
+    <ion-item color="#BD6CBD">
+      <ion-icon name="radio-button-off" style="color: blue;"></ion-icon>
+      <h4 style="margin-left: 25pt">Profesión: Programador</h4>
+    </ion-item>
+
+
+  </div>
+</ion-content>

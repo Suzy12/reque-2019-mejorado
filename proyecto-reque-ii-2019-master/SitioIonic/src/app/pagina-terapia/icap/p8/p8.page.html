@@ -1,0 +1,385 @@
+<ion-content>
+  <div class="container">
+    <div class="btn_back">
+      <ion-button class="btn_back" [routerLink]="['/medico/terapia/icap/p7']">Anterior</ion-button>
+    </div>
+
+    <div class="btn_next">
+      <ion-button class="btn_next" [routerLink]="['/medico/terapia/icap/p9']">Siguiente</ion-button>
+    </div>
+  </div>
+    <ion-row>
+      <ion-col size = "12" size-sm>
+          <h1>1. COMPORTAMIENTO AUTOAGRESIVO O DAÑO A SÍ MISMO</h1>
+          <p>Se hace daño en su propio cuerpo - por ejemplo: golpeándose,
+              dándose cabezasos, arañándose, cortándose o punzándose,
+              mordiéndose, frotándose la piel, jalándose el pelo,
+              pellizcándose o mordiéndose las uñas-.
+          </p>
+        <form>
+            <div class="form-row">
+                <h2> a. Si la respuesta es "Si" describa el problema principal</h2>
+                <ion-item>
+                    <ion-input></ion-input>
+                </ion-item>
+                <p>Si la respuesta es "No" marque nunca (0) para frecuencia y no es grave (0) para gravedad</p>
+            </div>
+
+            <div class="form-row">
+              <h2>b. Frecuencia: ¿Cuantas veces ocurre esto? (Marque una)</h2>
+              <label>
+                <input type="radio" name="optradio" value="0"> 0. Nunca
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="optradio" value="1"> 1. Menos de una vez al mes
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="optradio" value="2"> 2. De 1 a 3 veces al mes
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="optradio" value="3"> 3. De 1 a 6 veces por semana
+              </label>
+              <br>
+              <label>
+                  <input type="radio" name="optradio" value="4"> 4. De 1 a 10 veces al día
+                </label>
+              <br>
+              <label>
+                  <input type="radio" name="optradio" value="5"> 5. Una o más veces en una hora
+                </label>
+                <br>
+
+            </div>
+            <div class="form-row">
+              <h2>c. Gravedad: ¿Cual es la gravedad del problema causado por la conducta? (Marque una)</h2>
+              <label>
+                  <input type="radio" name="optradio" value="0"> 0. No es grave; no es un problema
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="1"> 1. Ligeramente grave; es un problema leve
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="2"> 2. Medianamente grave; es un problema moderado
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="3"> 3. Muy grave; es un problema grave
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="optradio" value="4"> 4. Extremadamente grave; es un problema crítico
+                  </label>
+                <br>
+            </div>
+          </form>
+
+    </ion-col>
+
+    <ion-col size = "12" size-sm >
+        <h1>2. HETEROAGRESIVIDAD O DAÑO A OTROS</h1>
+        <p>Causa dolor físico a otras personas o animales - por ejemplo:
+            golpeando, dando patadas, mordiendo, punzando, arañando,
+            jalando el pelo, golpeando con otro objeto.
+         </p>
+         <form>
+            <div class="form-row">
+                <h2> a. Si la respuesta es "Si" describa el problema principal</h2>
+                <ion-item>
+                    <ion-input></ion-input>
+                </ion-item>
+                <p>Si la respuesta es "No" marque nunca (0) para frecuencia y no es grave (0) para gravedad</p>
+            </div>
+
+            <div class="form-row">
+              <h2>b. Frecuencia: ¿Cuantas veces ocurre esto? (Marque una)</h2>
+              <label>
+                <input type="radio" name="optradio" value="0"> 0. Nunca
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="optradio" value="1"> 1. Menos de una vez al mes
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="optradio" value="2"> 2. De 1 a 3 veces al mes
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="optradio" value="3"> 3. De 1 a 6 veces por semana
+              </label>
+              <br>
+              <label>
+                  <input type="radio" name="optradio" value="4"> 4. De 1 a 10 veces al día
+                </label>
+              <br>
+              <label>
+                  <input type="radio" name="optradio" value="5"> 5. Una o más veces en una hora
+                </label>
+                <br>
+
+            </div>
+            <div class="form-row">
+              <h2>c. Gravedad: ¿Cual es la gravedad del problema causado por la conducta? (Marque una)</h2>
+              <label>
+                  <input type="radio" name="optradio" value="0"> 0. No es grave; no es un problema
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="1"> 1. Ligeramente grave; es un problema leve
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="2"> 2. Medianamente grave; es un problema moderado
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="3"> 3. Muy grave; es un problema grave
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="optradio" value="4"> 4. Extremadamente grave; es un problema crítico
+                  </label>
+                <br>
+            </div>
+          </form>
+    </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+        <ion-col size = "12" size-sm>
+            <h1>3. DESTRUCCIÓN DE OBJETOS</h1>
+            <p>Intencionadamente rompe, descompone o destruye cosas
+              - por ejemplo: golpeando, rasgando o cortando, tirando,
+              quemando, rompiendo o rayando.
+            </p>
+          <form>
+              <div class="form-row">
+                  <h2> a. Si la respuesta es "Si" describa el problema principal</h2>
+                  <ion-item>
+                      <ion-input></ion-input>
+                  </ion-item>
+                  <p>Si la respuesta es "No" marque nunca (0) para frecuencia y no es grave (0) para gravedad</p>
+              </div>
+
+              <div class="form-row">
+                <h2>b. Frecuencia: ¿Cuantas veces ocurre esto? (Marque una)</h2>
+                <label>
+                  <input type="radio" name="optradio" value="0"> 0. Nunca
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="1"> 1. Menos de una vez al mes
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="2"> 2. De 1 a 3 veces al mes
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="3"> 3. De 1 a 6 veces por semana
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="optradio" value="4"> 4. De 1 a 10 veces al día
+                  </label>
+                <br>
+                <label>
+                    <input type="radio" name="optradio" value="5"> 5. Una o más veces en una hora
+                  </label>
+                  <br>
+
+              </div>
+              <div class="form-row">
+                <h2>c. Gravedad: ¿Cual es la gravedad del problema causado por la conducta? (Marque una)</h2>
+                <label>
+                    <input type="radio" name="optradio" value="0"> 0. No es grave; no es un problema
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="optradio" value="1"> 1. Ligeramente grave; es un problema leve
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="optradio" value="2"> 2. Medianamente grave; es un problema moderado
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="optradio" value="3"> 3. Muy grave; es un problema grave
+                  </label>
+                  <br>
+                  <label>
+                      <input type="radio" name="optradio" value="4"> 4. Extremadamente grave; es un problema crítico
+                    </label>
+                  <br>
+              </div>
+            </form>
+
+      </ion-col>
+
+      <ion-col size = "12" size-sm >
+          <h1>4. CONDUCTA DISRUPTIVA</h1>
+          <p>Interfiere en las actividades de otros - por ejemplo: agarrando en
+              exceso a otros, acosándoles o molestándoles, discutiendo o
+              quejándose, buscando pelea, riéndose o llorando sin motivo,
+              interrumpiendo, gritando o dando alaridos.
+           </p>
+           <form>
+              <div class="form-row">
+                  <h2> a. Si la respuesta es "Si" describa el problema principal</h2>
+                  <ion-item>
+                      <ion-input></ion-input>
+                  </ion-item>
+                  <p>Si la respuesta es "No" marque nunca (0) para frecuencia y no es grave (0) para gravedad</p>
+              </div>
+
+              <div class="form-row">
+                <h2>b. Frecuencia: ¿Cuantas veces ocurre esto? (Marque una)</h2>
+                <label>
+                  <input type="radio" name="optradio" value="0"> 0. Nunca
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="1"> 1. Menos de una vez al mes
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="2"> 2. De 1 a 3 veces al mes
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="optradio" value="3"> 3. De 1 a 6 veces por semana
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="optradio" value="4"> 4. De 1 a 10 veces al día
+                  </label>
+                <br>
+                <label>
+                    <input type="radio" name="optradio" value="5"> 5. Una o más veces en una hora
+                  </label>
+                  <br>
+
+              </div>
+              <div class="form-row">
+                <h2>c. Gravedad: ¿Cual es la gravedad del problema causado por la conducta? (Marque una)</h2>
+                <label>
+                    <input type="radio" name="optradio" value="0"> 0. No es grave; no es un problema
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="optradio" value="1"> 1. Ligeramente grave; es un problema leve
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="optradio" value="2"> 2. Medianamente grave; es un problema moderado
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="optradio" value="3"> 3. Muy grave; es un problema grave
+                  </label>
+                  <br>
+                  <label>
+                      <input type="radio" name="optradio" value="4"> 4. Extremadamente grave; es un problema crítico
+                    </label>
+                  <br>
+              </div>
+            </form>
+      </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+          <ion-col size = "12" size-sm>
+              <h1>9. Reacción a la conducta problema en cualquier categoría</h1>
+              <p>¿Cómo reacciona habitualmente usted u otras personas ante los
+                problemas de conducta de la persona evaluada? (Marque una)
+               </p>
+               <form>
+                    <div class="form-row">
+                      <label>
+                        <input type="radio" name="optradio" value="0"> 0. No hay problemas de conducta.
+                      </label>
+                      <br>
+                      <label>
+                        <input type="radio" name="optradio" value="1"> 1. No hacen nada o le consuelan.
+                      </label>
+                      <br>
+                      <label>
+                        <input type="radio" name="optradio" value="2"> 2. Le piden que abandone la conducta, razonando con él o ella.
+
+                      </label>
+                      <br>
+                      <label>
+                        <input type="radio" name="optradio" value="3"> 3. Deliberadamente ignoran esta(s) conducta(s) reforzando
+                        otras más positivas.
+
+                      </label>
+                      <br>
+                      <label>
+                          <input type="radio" name="optradio" value="4"> 4. Le piden a la persona que se  disculpe o corrija a situación.
+
+                        </label>
+                      <br>
+                      <label>
+                          <input type="radio" name="optradio" value="5"> 5. Modifican o reestructuran el entorno, cambian de materiales.
+
+                        </label>
+                        <br>
+                      <label>
+                          <input type="radio" name="optradio" value="5"> 6. Piden que la persona salga de la habitación o del aula, la
+                          sala, etc., o que se siente en otro lugar.
+
+                        </label>
+                        <br>
+                      <label>
+                          <input type="radio" name="optradio" value="5"> 7. Le retiran ciertos privilegios obtenidos anteriormente.
+
+                        </label>
+                        <br>
+                      <label>
+                          <input type="radio" name="optradio" value="5"> 8. Le dirigen de manera física, le trasladan o le ponen
+                          límites físicamente.
+
+                      </label>
+                      <br>
+                      <label>
+                          <input type="radio" name="optradio" value="5"> 9. Se necesita ayuda para controlarle, son precisas 2 o +
+                          personas para ello.
+
+                        </label>
+                        <br>
+                      <label>
+                          <input type="radio" name="optradio" value="5"> 10. Otros.
+
+                        </label>
+                        <br>
+
+
+                    </div>
+          </form>
+
+        </ion-col>
+
+        <ion-col size = "12" size-sm >
+            <h1>Comentarios</h1>
+            <ion-textarea class="txt-area" rows="6" cols="20" placeholder="Escriba aqu&iacute;"></ion-textarea>
+        </ion-col>
+
+        </ion-row>
+        <div class="container">
+          <div class="btn_back">
+            <ion-button class="btn_back" [routerLink]="['/medico/terapia/icap/p7']">Anterior</ion-button>
+          </div>
+
+          <div class="btn_next">
+            <ion-button class="btn_next" [routerLink]="['/medico/terapia/icap/p9']">Siguiente</ion-button>
+          </div>
+        </div>
+
+</ion-content>

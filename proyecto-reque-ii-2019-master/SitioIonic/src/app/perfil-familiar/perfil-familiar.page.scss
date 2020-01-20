@@ -1,0 +1,49 @@
+.perfil-subInfo {
+    width: 50%;
+    text-align: center;
+  }
+
+  .perfil-listItem{
+    margin-left: 40pt;
+    width: 125pt;
+
+
+  }
+
+  .perfil-Imagen {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 3px;
+    border-radius: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    overflow: hidden;
+  }
+
+  *{
+    
+    font-family : 'Roboto' ,  sans-serif;
+  }
+
+
+
+  h2{
+    font-size: 24px;
+
+  }
+
+  h4{
+    font-size: 20px;
+
+  }
+
+
+  ion-content{
+    color:#003060;
+    height: 100%;
+    width: 100%;
+  }

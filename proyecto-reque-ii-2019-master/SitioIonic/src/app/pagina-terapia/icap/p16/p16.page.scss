@@ -1,0 +1,121 @@
+ion-row{
+    border:1px solid #303030;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: 3px 3px 15px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 15px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 15px -4px rgba(0, 0, 0, 0.75);
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    margin: 1%;
+    color: #1e1b6f;
+    font-size:18px;
+}
+.margin{
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+table {
+    border-collapse:collapse;
+    //border:1px solid #1e1b6f;
+    margin-right: 20%;
+    table-layout: fixed;
+    width: 130%;
+  }
+
+  /* Espacio de relleno en celdas y cabeceras */
+  td, th {
+    padding:10px;
+  }
+  /* Modificación de estilos en celdas */
+  td {
+    text-align:center;
+    border-bottom:2px solid rgb(242, 242, 245);
+    color: #1e1b6f;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .margin-col{
+    margin-top: 1% ;
+    margin-left: 10%;
+    margin-right: 5%;;
+    margin-bottom: 2% ;
+  }
+
+.td_morado{
+    background-color: #BCA9F5;
+}
+.td_rosado{
+    background-color: #F78181;
+}
+.td_pink{
+    background-color:#F5A9BC
+}
+.td_amarillo{
+    background-color: #F3F781;
+}
+
+.td_rosa{
+    background-color:#F5A9F2;
+}
+.td_verde{
+    background-color:#58FA82;
+}
+.td_papaya{
+    background-color: #F79F81;
+}
+
+.td_celeste{
+    background-color: #A9F5F2;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+ion-button {
+  --background: #1e1b6f;
+  --background-hover : #2c28a4;
+  color: white;
+  margin-top: 2em;
+  font-size: 1.7em;
+  width: 15%;
+  height: 8%;
+}
+
+.btn_back {
+  text-align: left;
+  margin-left: 5%;
+  width: 50%;
+  height: 10%;
+}
+
+.btn_next {
+  text-align: right;
+  margin-right: 5%;
+  width: 50%;
+  height: 10%;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+
+.btn_next {
+  width: 80%;
+  margin-right: 20%;
+}
+
+.btn_back {
+  width: 80%;
+  margin-left: auto;
+}
+
+}

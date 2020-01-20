@@ -1,0 +1,72 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="medico/medicamentos"></ion-back-button>
+        </ion-buttons>
+    <ion-title> <h3 font-size = "140%"> Asignar medicamentos</h3></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card >
+        <ion-card-header>
+          <ion-card-title color="blue1">Seleccionar paciente</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-item>
+            
+            <ionic-selectable
+            closeButtonText="Cerrar"
+            searchPlaceholder="Buscar paciente"
+            placeholder="Seleccionar paciente"
+            [searchFailText]="'No se encontró ningun paciente'"
+            [(ngModel)]="usuario"
+            [items]="usuarios"
+            itemTextField="nombre"
+            itemValueField="cedula"
+            [canSearch]="true">
+            </ionic-selectable>
+          </ion-item>
+        </ion-card-content>
+    
+      </ion-card>
+
+
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title color="blue1">Medicamento</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+        
+            <ion-item>
+              <ion-label>Nombre Medicamento:  </ion-label>
+              <ion-input type="text" placeholder="" [(ngModel)]="inputNombreMedicamento"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Dosis: </ion-label>
+              <ion-input type="text" placeholder="" [(ngModel)]="inputDosis"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Fecha inicio:</ion-label>
+              <ion-input type="date" [(ngModel)]="fechaInicio" name="Fecha inicio"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fecha fin:</ion-label>
+                <ion-input type="date" [(ngModel)]="fehcaFin"   name="Fecha fin"></ion-input>
+                 
+            </ion-item>
+      
+    </ion-card-content>
+
+  </ion-card>
+
+ 
+
+  <div style="text-align:center;margin-top: 35px;">
+      <ion-button color="magenta"shape="round"(click)="agregarMedicamento()" >Asignar medicamento</ion-button>
+  </div>
+  
+</ion-content>

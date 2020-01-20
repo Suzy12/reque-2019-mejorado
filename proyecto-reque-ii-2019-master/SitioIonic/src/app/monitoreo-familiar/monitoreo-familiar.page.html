@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/menu/medico"></ion-back-button>
+          </ion-buttons>
+      <ion-title> <h3 font-size = "140%"> Agregar Recordatorios </h3></ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+    <ion-card *ngIf="!hidePacientes">
+        <ion-card-header>
+          <ion-card-title color="blue1">Seleccionar paciente</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-item>
+            <ionic-selectable
+            closeButtonText="Cerrar"
+            searchPlaceholder="Buscar paciente"
+            placeholder="Seleccionar paciente"
+            [searchFailText]="'No se encontró ningun paciente'"
+            [(ngModel)]="usuario"
+            [items]="usuarios"
+            itemTextField="nombre"
+            itemValueField="cedula"
+            [canSearch]="true">
+            </ionic-selectable>
+          </ion-item>
+        </ion-card-content>    
+      </ion-card>
+      <div style="text-align:center;" >
+          <ion-button  class= "butonLista" color="magenta"shape="round"(click)="locatePaciente()" >Ubicación</ion-button>
+      </div>
+</ion-content>
